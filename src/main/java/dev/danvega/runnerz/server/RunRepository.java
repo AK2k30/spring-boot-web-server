@@ -5,19 +5,19 @@ import java.util.Optional;
 
 public interface RunRepository {
 
-    List<Run> findAll();
+  List<Run> findAll();
 
-    Optional<Run> findById(Integer id);
+  Optional<Run> findById(Integer id);
 
-    void create(Run run);
+  void create(Run run);
 
-    void update(Run run, Integer id);
+  void update(Run run, Integer id);
 
-    void delete(Integer id);
+  void delete(Integer id);
 
-    int count();
+  int count();
 
-    void saveAll(List<Run> runs);
+  void saveAll(List<Run> runs);
 
-    List<Run> findByLocation(String location);
+  List<Run> findByLocation(String location);
 }
